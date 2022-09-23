@@ -1,13 +1,12 @@
 <template>
-    <div class="other-links">
-
+    <div>
+        Links
     </div>
 </template>
 
 <script>
-export default {
-    name: 'OtherLinks',
-}
+
+export default {}
 </script>
 
 <style scoped lang="scss">

@@ -1,36 +1,32 @@
 <template>
   <div id="app">
-    <HeaderWithNav />
-    <ContentPage />
-    <ShopNav />
-    <OtherLinks />
-    <FooterWithNav />
+    <HeaderComponent />
+    <MainComponent />
+    <FooterComponent />
   </div>
 </template>
 
 <script>
-import HeaderWithNav from './components/HeaderWithNav.vue';
-import ContentPage from './components/ContentPage.vue';
-import ShopNav from './components/ShopNav.vue';
-import OtherLinks from './components/OtherLinks.vue';
-import FooterWithNav from './components/FooterWithNav.vue';
+import HeaderComponent from './components/HeaderComponent.vue';
+import MainComponent from './components/MainComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
   name: 'App',
   components: {
-    HeaderWithNav,
-    ContentPage,
-    ShopNav,
-    OtherLinks,
-    FooterWithNav
+    HeaderComponent,
+    MainComponent,
+    FooterComponent
   }
 }
 </script>
 
 <style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import './styles/generic';
+@import './styles/variables';
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 </style>

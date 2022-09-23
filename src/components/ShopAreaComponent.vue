@@ -1,13 +1,12 @@
 <template>
-    <div class="content-page">
-
+    <div>
+        Shop Area
     </div>
 </template>
 
 <script>
-export default {
-    name: 'ContentPage',
-}
+
+export default {}
 </script>
 
 <style scoped lang="scss">

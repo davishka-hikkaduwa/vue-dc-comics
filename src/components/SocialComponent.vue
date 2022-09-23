@@ -1,13 +1,12 @@
 <template>
-    <div class="header-with-nav">
-
+    <div>
+        Social
     </div>
 </template>
 
 <script>
-export default {
-    name: 'HeaderWithNav',
-}
+
+export default {}
 </script>
 
 <style scoped lang="scss">
