@@ -10,6 +10,8 @@
 import HeaderComponent from './components/HeaderComponent.vue';
 import MainComponent from './components/MainComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
+import { comics } from '@/assets/data/dc-comics.json';
+console.log(comics);
 
 export default {
   name: 'App',
@@ -17,6 +19,9 @@ export default {
     HeaderComponent,
     MainComponent,
     FooterComponent
+  },
+  data() {
+    return { comics }
   }
 }
 </script>
