@@ -1,14 +1,13 @@
 <template>
-
     <div class="container">
         <header>
             <div id="logo">
-                <img src="../assets/img/dc-logo.png" alt="dc-logo">
+                <img src="../assets/img/dc-logo.png" alt="dc logo">
             </div>
             <nav>
                 <ul>
                     <li v-for="link in links" :key="link.title">
-                        <a :href="link.link" :class="{active: link.active}">
+                        <a :href="link.link" :class="{ active: link.active }">
                             {{ link.title }}
                         </a>
                     </li>
@@ -109,8 +108,9 @@ ul {
             text-decoration: none;
             text-transform: uppercase;
 
-            &.active {
-                border-bottom: 2px solid $brand-color;
+            &.active:hover {
+                border-bottom: 4px solid $brand-color;
+            
             }
         }
     }

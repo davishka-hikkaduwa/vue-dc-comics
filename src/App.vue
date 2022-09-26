@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <HeaderComponent />
-    <MainComponent />
+
+    <MainComponent :cards="comics" />
+
     <FooterComponent />
   </div>
 </template>
@@ -10,8 +12,7 @@
 import HeaderComponent from './components/HeaderComponent.vue';
 import MainComponent from './components/MainComponent.vue';
 import FooterComponent from './components/FooterComponent.vue';
-import { comics } from '@/assets/data/dc-comics.json';
-console.log(comics);
+import comics from '@/assets/data/dc-comics.json';
 
 export default {
   name: 'App',
@@ -21,7 +22,9 @@ export default {
     FooterComponent
   },
   data() {
-    return { comics }
+    return {
+      comics
+    }
   }
 }
 </script>
